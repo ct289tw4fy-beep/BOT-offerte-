@@ -31,7 +31,7 @@ def save_state(st):
 
 
 def tg(method, **data):
-    token = os.environ["TELEGRAM_TOKEN"]
+    token = os.environ["TELEGRAM_TOKEN"].strip()
     r = requests.post(f"https://api.telegram.org/bot{token}/{method}", data=data, timeout=20)
     j = r.json()
     if not j.get("ok"):
