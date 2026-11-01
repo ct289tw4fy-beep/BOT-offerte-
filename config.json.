@@ -1,0 +1,14 @@
+{
+  "feeds": [
+    "https://www.pepper.it/rss/nuovi"
+  ],
+  "min_discount": 50,
+  "coupon_min_discount": 30,
+  "max_age_hours": 48,
+  "include_words": [],
+  "exclude_words": ["abbonamento", "finanziamento", "assicurazione"],
+  "expired_patterns": [
+    "\"isExpired\"\\s*:\\s*true",
+    "Questa offerta è scaduta"
+  ]
+}
